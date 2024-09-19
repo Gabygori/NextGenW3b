@@ -1,0 +1,89 @@
+html{
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: black;
+    color: whitesmoke;
+}   
+main{
+    margin-bottom: 100px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px whitesmoke solid; 
+    height: auto;
+    margin: 0%;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.construccion{
+    display: inline;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.punto-1{
+    display: inline;
+    animation: puntos 1s 1s  infinite forwards;
+}
+
+.punto-2{
+    display: inline;
+    animation: puntos 1s 1.25s infinite forwards;
+}
+
+.punto-3{
+    display: inline;
+    animation: puntos 1s 1.5s infinite forwards;
+}
+
+.derechos{
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+
+.contactos{
+    margin-left: 70%;
+    display: inline;
+    width: 70px;
+    height: auto;;
+}
+
+.contactos img{
+    min-width: 60%;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    background-color: white;
+}
+
+@keyframes puntos{
+    0%{
+        color: whitesmoke;
+    }
+    50%{
+        color: grey;
+    }
+    100%{
+        color: black;
+    }
+}
