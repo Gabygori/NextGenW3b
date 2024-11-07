@@ -1,0 +1,407 @@
+/* Estilos generales */
+html {
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    color: whitesmoke;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+header {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    height: 24%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+header img {
+    display: flex;
+    justify-content: left;
+    margin-left: 0%;
+    padding-left: 0%;
+    width: 35%;
+    height: auto;
+    border-radius: 60%;
+}
+
+header h2 {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+    border-radius: 20%;
+    padding: 3%;
+    margin-right: 15%;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    animation: botone 0.3s 1 forwards;
+}
+
+p {
+    width: 70%;
+    height: 100px;
+}
+
+/* Encabezado */
+.titulo_encabezado {
+    justify-content: baseline;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.titulo {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.frase {
+    display: flex;
+    margin-top: 0px;
+    font-size: 1.2rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.boton {
+    width: 100px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px 20px;
+    color: whitesmoke;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.boton:hover {
+    transform: scale(1.3);
+}
+
+/* pagina inicio */
+.inicio {
+    flex-direction: column;
+}
+
+.Pagina_inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.imagen_inicio {
+    text-align: center;
+}
+
+.imagen_inicio img {
+    width: 50%;
+    height: auto;
+}
+
+.logo {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
+/* Pagina nosotros */
+.Pagina_nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.contenido_nosotros {
+    width: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 50%;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+/* Estilos para el formulario */
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-contenedor {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: whitesmoke;
+}
+
+input::placeholder {
+    color: #d3d3d3;
+}
+
+/* footer */
+.pieDePagina {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid whitesmoke;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.derechos {
+    display: flex;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactos img {
+    min-width: 60%;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    background-color: white;
+}
+
+/* clases decoracion */
+.texto-con-fondo {
+    position: relative;
+    max-width: 600px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.texto-con-fondo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 19, 19, 0.5);
+    z-index: -1;
+}
+
+.fondo-transparente {
+    background-color: rgb(255, 255, 255, 0.1);
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 15%;
+    margin-right: 25%;
+}
+
+.carousel img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel .imagen-activa {
+    opacity: 1;
+}
+
+/* Estilos adaptativos */
+
+/* Animaciones */
+@keyframes botone {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    /* En pantallas grandes o tabletas */
+    header img {
+        width: 30%;
+    }
+
+    header h2 {
+        font-size: 2rem;
+        margin-right: 10%;
+    }
+
+    .botones {
+        max-width: 500px;
+    }
+
+    .imagen_inicio img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* En pantallas medianas (tabletas y pantallas más pequeñas) */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    header img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .imagen_inicio img {
+        width: 70%;
+    }
+
+    .pieDePagina {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contactos img {
+        width: 50%;
+    }
+
+    .Pagina_inicio h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* En pantallas pequeñas (móviles) */
+    header h2 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .botones {
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    .boton {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .imagen_inicio img {
+        width: 80%;
+    }
+
+    .pieDePagina {
+        padding: 10px;
+    }
+
+    .contactos img {
+        width: 40%;
+    }
+
+    .texto-con-fondo {
+        padding: 10px;
+    }
+
+    .carousel {
+        margin-right: 10%;
+        max-width: 100%;
+    }
+}

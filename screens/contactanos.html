@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="shortcut icon" href="../media/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+      emailjs.init("dVg2-aPWhEZ3rd22a");
+    })();
+  </script>
+</head>
+<body>
+    <header>
+        <section class="titulo_encabezado">
+            <img src="../media/logo_empresa.jpg" alt="Logo empresa">
+        </section>
+        <h2>NextGenW3b</h2>
+        <nav class="botones">
+        <a href="../index.html" class="boton inicio">
+            <h3>inicio</h3>
+        </a>
+        <a href="./nosotros.html" class="boton">
+            <h3>Nosotros</h3>
+        </a>
+        <a href="./contactanos.html" class="boton contactanos">
+            <h3>Contactanos</h3>
+        </a>
+        </nav>
+    </header>
+    <main  class="centrar">
+        <div class="formulario-contenedor">
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm" action="mailto:gabrielosbando08@gmail.com" method="post" enctype="text/plain">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                
+                <label for="empresa">Nombre de la Empresa/Negocio:</label>
+                <input type="text" id="empresa" name="empresa">
+                
+                <label for="contacto">Número de Contacto:</label>
+                <input type="tel" id="contacto" name="contacto" required>
+                
+                <label for="gmail">Gmail de Contacto:</label>
+                <input type="email" id="gmail" name="gmail" required>
+                
+                <button type="submit" class="boton" value="send">Enviar</button>
+            </form>
+            <p id="respuesta" style="display: none;">Gracias por contactarnos, espere nuestra respuesta</p>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="../scripts/contactos.js"></script>
+</body>
+</html>
